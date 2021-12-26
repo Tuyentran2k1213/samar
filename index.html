@@ -384,13 +384,13 @@
                 </div>
             </div>
             <div class="ur-plan-bot">
-                <div class="card-plan-group">
+                <div class="card-plan-group" id="card_plan">
                     <div class="plan-card plan1">
                         <div class="topof-plancard">
                         <h3>Basic Plan</h3>
                       <img src="./image/pic4_1.jpg" class="plan-card-img-top" alt="...">
-                      <span class="big-num">$49</span><span>/Month</span></br>
-                      <span class="big-num">$499</span><span>/Year</span>
+                      <span class="big-num monthly">$49</span><span class="monthly">/Month</span></br>
+                      <span class="big-num yearly">$499</span><span class="yearly">/Year</span>
                     </div>
                       <div class="plan-card-body">
                         <ul>
@@ -408,8 +408,8 @@
                         <div class="topof-plancard">
                         <h3>Standart Plan</h3>
                       <img src="./image/pic5_1.jpg" class="plan-card-img-top" alt="...">
-                      <span class="big-num">$99</span><span>/Month</span></br>
-                      <span class="big-num">$1099</span><span>/Year</span>
+                      <span class="big-num monthly">$99</span><span class="monthly">/Month</span></br>
+                      <span class="big-num yearly">$1099</span><span class="yearly">/Year</span>
                     </div>
                       <div class="plan-card-body">
                         <ul>
@@ -427,8 +427,8 @@
                         <div class="topof-plancard">
                         <h3>Premium Plan</h3>
                       <img src="./image/pic6_1.jpg" class="plan-card-img-top" alt="...">
-                      <span class="big-num">$149</span><span>/Month</span></br>
-                      <span class="big-num">$1249</span><span>/Year</span>
+                      <span class="big-num monthly">$149</span><span class="monthly">/Month</span></br>
+                      <span class="big-num yearly">$1249</span><span class="yearly">/Year</span>
                     </div>
                       <div class="plan-card-body">
                         <ul>
@@ -774,11 +774,14 @@
         var chance = document.getElementById("year");
         var slide = document.getElementById("slide_btn");
         var goback = document.getElementById("month");
+        var cardplan = document.getElementById("card_plan");
         chance.onclick = function(){
             slide.classList.add("slide-actived");
+            cardplan.classList.add("card-activated");
         }
         goback.onclick = function(){
             slide.classList.remove("slide-actived");
+            cardplan.classList.remove("card-activated");
         }
     </script>
     

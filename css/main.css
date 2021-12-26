@@ -274,7 +274,7 @@ header .header-logo {
     width: 0px;
     background-color: var(--black);
     height: 2px;
-    top: 27px;
+    top: 30px;
     left: 10px;
     transition: 0.3s;
 }
@@ -880,6 +880,18 @@ header .header-logo {
     border-bottom: solid 1px #e1e1f0;
     width: 70%;
 }
+.card-plan-group .topof-plancard .monthly{
+    display: inline-block;
+}
+.card-plan-group .topof-plancard .yearly{
+    display: none;
+}
+.card-activated .topof-plancard .yearly{
+    display: inline-block;
+}
+.card-activated .topof-plancard .monthly{
+    display: none;
+}
 .plan-card .topof-plancard{
     text-align: center;
     margin: 0px auto;
@@ -898,6 +910,7 @@ header .header-logo {
 .topof-plancard span{
     font-family: bold-medium;
     font-size: 1.4rem;
+    margin: 20px 0px;
 }
 .topof-plancard .big-num{
     font-family: bolding;
