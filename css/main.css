@@ -614,7 +614,7 @@ header .header-logo {
 }
 
     /* this is start for override */
-.num1, .num2, .num3{
+.num{
     position: relative;
 }
 .background{

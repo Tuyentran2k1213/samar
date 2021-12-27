@@ -213,7 +213,7 @@
             <div class="media-body">
               <h4 class="pinkfont">Our Features</h4>
               <h1 class="black-content">Behind The Story Of Samar Agency</h1>
-                <div class="feature-item num1 choose">
+                <div class="feature-item num choose">
                     <div class="feature-icon">
                         <i class="fa fa-deaf"></i>
                     </div>
@@ -233,7 +233,7 @@
                         
                     </div>
                 </div>
-                <div class="feature-item middle-content num2">
+                <div class="feature-item middle-content num">
                     <div class="feature-icon">
                         <i class="fa fa-laptop-code"></i>
                     </div>
@@ -253,7 +253,7 @@
                     
                 </div>
                 </div>
-                <div class="feature-item num3">
+                <div class="feature-item num">
                     <div class="feature-icon">
                         <i class="fas fa-university"></i>
                     </div>
@@ -385,7 +385,7 @@
             </div>
             <div class="ur-plan-bot">
                 <div class="card-plan-group" id="card_plan">
-                    <div class="plan-card plan1">
+                    <div class="plan-card plan">
                         <div class="topof-plancard">
                         <h3>Basic Plan</h3>
                       <img src="./image/pic4_1.jpg" class="plan-card-img-top" alt="...">
@@ -404,7 +404,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="plan-card plan2">
+                    <div class="plan-card plan">
                         <div class="topof-plancard">
                         <h3>Standart Plan</h3>
                       <img src="./image/pic5_1.jpg" class="plan-card-img-top" alt="...">
@@ -423,7 +423,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="plan-card plan3">
+                    <div class="plan-card plan">
                         <div class="topof-plancard">
                         <h3>Premium Plan</h3>
                       <img src="./image/pic6_1.jpg" class="plan-card-img-top" alt="...">
@@ -744,27 +744,8 @@
     <script>
         $(document).ready(function(){
         
-        $(".num1").hover(function(){
-            $('.num2').removeClass('choose');
-            $('.num3').removeClass('choose');
-            $(this).addClass('choose');
-        });
-    });
-
-    $(document).ready(function(){
-        
-        $(".num2").hover(function(){
-            $('.num1').removeClass('choose');
-            $('.num3').removeClass('choose');
-            $(this).addClass('choose');
-        });
-    });
-
-    $(document).ready(function(){
-        
-        $(".num3").hover(function(){
-            $('.num2').removeClass('choose');
-            $('.num1').removeClass('choose');
+        $(".num").hover(function(){
+            $('.num.choose').removeClass('choose');
             $(this).addClass('choose');
         });
     });
@@ -788,28 +769,8 @@
         <!-- Our client script -->
     <script>
         $(document).ready(function(){
-        
-        $(".plan1").hover(function(){
-            $('.plan2').removeClass('activate');
-            $('.plan3').removeClass('activate');
-            $(this).addClass('activate');
-        });
-    });
-
-    $(document).ready(function(){
-        
-        $(".plan2").hover(function(){
-            $('.plan1').removeClass('activate');
-            $('.plan3').removeClass('activate');
-            $(this).addClass('activate');
-        });
-    });
-
-    $(document).ready(function(){
-        
-        $(".plan3").hover(function(){
-            $('.plan2').removeClass('activate');
-            $('.plan1').removeClass('activate');
+        $(".plan").hover(function(){
+            $('.plan').removeClass('activate');
             $(this).addClass('activate');
         });
     });
